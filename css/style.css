@@ -1045,6 +1045,10 @@ footer {
     text-align: center;
     vertical-align: bottom;
   }
+  footer {
+    display: block;
+    padding-bottom: 61px;
+  }
 }
 @media (min-width: 1239px) {
   body {
@@ -1535,10 +1539,6 @@ footer {
   }
 }
 @media (max-width: 991px) {
-  footer {
-    display: block;
-    padding-bottom: 61px;
-  }
   .copyright--design {
     display: block;
     padding-left: 25px;
