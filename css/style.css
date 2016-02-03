@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -591,8 +590,8 @@ hr {
 //                                              //
 !##############################################!*/
 h1 {
-  margin: 0 0 50px 0;
-  font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
+  margin: 0 0 1.2em 0;
+  font-family: "PT Serif", "Times New Roman", Times, serif;
   font-size: 27px;
   font-weight: normal;
   line-height: 1;
@@ -604,7 +603,7 @@ h1 {
 
 h2 {
   margin: 0 0 1em 0;
-  font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
+  font-family: "PT Serif", "Times New Roman", Times, serif;
   font-size: 24px;
   font-weight: normal;
   line-height: 20px;
@@ -614,7 +613,7 @@ h2 {
 
 h3 {
   margin: 0 0 1em 0;
-  font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
+  font-family: "PT Serif", "Times New Roman", Times, serif;
   font-size: 22px;
   font-weight: normal;
   line-height: 20px;
@@ -624,7 +623,7 @@ h3 {
 
 h4 {
   margin: 0 0 1em 0;
-  font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
+  font-family: "PT Serif", "Times New Roman", Times, serif;
   font-size: 18px;
   font-weight: normal;
   line-height: 20px;
@@ -634,7 +633,7 @@ h4 {
 
 h5 {
   margin: 0 0 1em 0;
-  font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
+  font-family: "PT Serif", "Times New Roman", Times, serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 20px;
@@ -644,7 +643,7 @@ h5 {
 
 h6 {
   margin: 0 0 1em 0;
-  font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
+  font-family: "PT Serif", "Times New Roman", Times, serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 20px;
@@ -663,48 +662,31 @@ p {
 }
 
 .page-header {
-  padding-top: 90px;
-  padding-bottom: 11px;
+  padding-top: 60px;
+  padding-bottom: 10px;
 }
 
 .page-nav {
   text-align: center;
 }
 .page-nav__wrap {
-  position: fixed;
-  top: 3rem;
-  right: 3rem;
+  position: absolute;
+  top: -10.3rem;
+  right: 1.9rem;
   z-index: 4;
   display: block;
-  margin-bottom: 1rem;
-  margin-left: 4.8rem;
   font-size: 0;
   text-align: left;
 }
-.page-nav__control .menu-icon {
+.page-nav__control {
   display: block;
-  max-width: 45px;
-  margin: 15% auto;
-  font-size: 3.4rem;
+  width: 30px;
+  height: 30px;
   text-align: center;
   cursor: pointer;
-  -webkit-transition: -webkit-transform .2s ease;
-          transition: -webkit-transform .2s ease;
-          transition:         transform .2s ease;
-          transition:         transform .2s ease, -webkit-transform .2s ease;
-}
-.page-nav__control .menu-icon:before {
-  display: block;
-  line-height: .5; 
-  content: "☰";
-}
-.page-nav__control .menu-icon:after {
-  display: none; 
-  margin-top: .4em;
-  font-size: .75em;
-  font-weight: 800;
-  line-height: .5;
-  content: "╳";
+  background: transparent;
+  border: none; 
+  box-shadow: none;
 }
 .page-nav__control:hover {
   text-decoration: none;
@@ -713,63 +695,60 @@ p {
   text-decoration: none;
 }
 .page-nav__drop {
-  position: fixed;
-  top: 2rem;
-  left: 1rem;
   z-index: 3;
-  padding: 1.4rem 3rem;
+  display: block;
+  max-height: 0;
+  padding-left: 25px;
   margin: 0;
+  margin-bottom: 2em;
+  overflow: hidden;
   list-style: none;
-  background-color: #ebebeb;
-  border: 12px solid #fff;
-  box-shadow: 0 0 0 2px #ebebeb; 
-  -webkit-transition: -webkit-transform .4s ease;
-          transition: -webkit-transform .4s ease;
-          transition:         transform .4s ease;
-          transition:         transform .4s ease, -webkit-transform .4s ease;
-  -webkit-transform: translateX(-160%);
-      -ms-transform: translateX(-160%);
-          transform: translateX(-160%);
+  -webkit-transition: max-height .25s ease-out,  padding .3s ease-out;
+          transition: max-height .25s ease-out,  padding .3s ease-out;
+
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 .page-nav__drop li {
   position: relative;
   z-index: 3; 
   display: block;
-  margin-bottom: 2em;
+  margin-bottom: 1.4em;
 }
 .page-nav__drop li:first-child:before {
   position: absolute;
-  top: -8px;
-  left: -15px;
+  top: -3px;
+  left: -6px;
   z-index: -1;
-  width: 42px;
-  height: 42px;
+  width: 30px;
+  height: 30px;
   content: "";
-  border: 4px solid #fff;
-  border-radius: 4px; 
+  border: 3px solid #fff;
+  border-radius: 3px; 
   opacity: .8;
 }
 .page-nav__drop li:nth-child(2):before {
   position: absolute;
-  top: -8px;
-  left: -15px;
+  top: -3px;
+  left: -6px;
   z-index: -1;
-  width: 42px;
-  height: 42px;
+  width: 30px;
+  height: 30px;
   content: "";
-  border: 4px solid #fff;
+  border: 3px solid #fff;
   border-radius: 50%; 
   opacity: .8;
 }
 .page-nav__drop li:nth-child(3):before {
   position: absolute;
-  top: -9px;
-  left: -9px;
+  top: -4px;
+  left: -5px;
   z-index: -1;
-  width: 39px;
-  height: 44px;
+  width: 30px;
+  height: 34px;
   content: "";
-  background-image: url("../img/icon-poly.png"); 
+  background-image: url("../img/icon-poly.png");
+  background-size: contain; 
   opacity: .8;
 }
 .page-nav__drop li:last-child {
@@ -778,13 +757,13 @@ p {
 }
 .page-nav__drop li:last-child:before {
   position: absolute;
-  top: -3px;
-  left: -12px;
+  top: -1px;
+  left: -3px;
   z-index: -1;
-  width: 32px;
-  height: 32px;
+  width: 25px;
+  height: 25px;
   content: "";
-  border: 4px solid #fff;
+  border: 3px solid #fff;
   border-radius: 4px;
   opacity: .8;
   -webkit-transform: rotate(45deg);
@@ -795,17 +774,21 @@ p {
   opacity: 1;
 }
 .page-nav__drop--active {
-  -webkit-transition: -webkit-transform .8s cubic-bezier(.45, -.49, .52, 1.32);
-          transition: -webkit-transform .8s cubic-bezier(.45, -.49, .52, 1.32);
-          transition:         transform .8s cubic-bezier(.45, -.49, .52, 1.32);
-          transition:         transform .8s cubic-bezier(.45, -.49, .52, 1.32), -webkit-transform .8s cubic-bezier(.45, -.49, .52, 1.32); 
-  -webkit-transform: rotateX(0);
-          transform: rotateX(0);
+  display: block;
+  max-height: 300px;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin-bottom: 2em;
+  -webkit-transition: max-height .6s ease-out,  padding .1s ease-out;
+          transition: max-height .6s ease-out,  padding .1s ease-out;
+
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 .page-nav__link {
   display: block;
   padding-left: 2%;
-  font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
+  font-family: "PT Serif", "Times New Roman", Times, serif;
   font-size: 17px;
   color: #7a7a7a; 
   text-align: left;
@@ -815,35 +798,23 @@ p {
   text-decoration: none;
 }
 
-#toggle-menu {
-  display: none;
-}
-
-#toggle-menu:checked ~ label[for="toggle-menu"] .menu-icon {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-#toggle-menu:checked ~ label[for="toggle-menu"] .menu-icon:before {
-  display: none;
-}
-
-#toggle-menu:checked ~ label[for="toggle-menu"] .menu-icon:after {
-  display: block;
-}
-
 footer {
-  padding-top: 23px;
-  padding-bottom: 131px;
+  padding-top: 10px;
+  padding-bottom: 25px;
 }
 
 .contact {
+  display: block;
+  margin-bottom: 1.24em;
+  margin-left: -3px;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.42857;
   color: #7a7a7a;
   letter-spacing: .001em;
+}
+.contact > a:hover {
+  text-decoration: none;
 }
 .contact:hover {
   color: #333;
@@ -851,18 +822,9 @@ footer {
 }
 
 .copyright {
-  margin: 0;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  line-height: 1.42857;
+  padding-right: 5px;
+  font-weight: normal; 
   color: #333;
-  letter-spacing: .001em;
-}
-.copyright--design {
-  padding-left: 18px;
-}
-.copyright--left {
-  padding-left: 25px;
 }
 
 .content {
@@ -926,7 +888,7 @@ footer {
   width: 97%;
   margin: 0;
   margin-left: 3px;
-  font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
+  font-family: "PT Serif", "Times New Roman", Times, serif;
   font-size: 22px;
   font-weight: normal;
   line-height: 1;
@@ -941,7 +903,7 @@ footer {
 }
 .content__descr {
   position: absolute;
-  bottom: 18px;
+  bottom: 14px;
   left: 28px;
   z-index: 2;
 }
@@ -1474,6 +1436,13 @@ footer {
   }
 }
 @media (min-width: 767px) {
+  h1 {
+    margin: 0 0 50px 0;
+  }
+  .page-header {
+    padding-top: 90px;
+    padding-bottom: 11px;
+  }
   .page-nav {
     margin-top: 2px;
     margin-bottom: 50px;
@@ -1482,11 +1451,12 @@ footer {
     display: none;
   }
   .page-nav__drop {
-    position: static;
+    display: block;
+    max-height: none;
     padding: 0;
-    background-color: none;
+    margin-bottom: 0;
+    overflow: visible; 
     border: none;
-    box-shadow: none; 
     -webkit-transition: none;
             transition: none;
     -webkit-transform: none;
@@ -1496,11 +1466,39 @@ footer {
   .page-nav__drop li {
     display: inline-block;
     margin-right: 4.3em;
+    margin-bottom: 1.4em;
     text-align: center;
     vertical-align: bottom;
   }
+  .page-nav__drop li:first-child:before {
+    top: -8px;
+    left: -15px;
+    width: 42px;
+    height: 42px;
+    border: 4px solid #fff;
+  }
+  .page-nav__drop li:nth-child(2):before {
+    top: -8px;
+    left: -15px;
+    width: 42px;
+    height: 42px;
+    border: 4px solid #fff;
+  }
+  .page-nav__drop li:nth-child(3):before {
+    top: -9px;
+    left: -9px;
+    width: 39px;
+    height: 44px;
+  }
   .page-nav__drop li:last-child {
-    margin-bottom: 2em;
+    margin-bottom: 1.4em;
+  }
+  .page-nav__drop li:last-child:before {
+    top: -3px;
+    left: -12px;
+    width: 32px;
+    height: 32px;
+    border: 4px solid #fff;
   }
   .page-nav__link {
     display: inline-block;
@@ -1508,17 +1506,19 @@ footer {
     vertical-align: bottom;
   }
   footer {
-    display: block;
-    padding-bottom: 61px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  .contact {
+    display: inline-block;
+    margin-left: 0;
   }
 }
-@media (max-width: 991px) {
-  .copyright--design {
-    display: block;
-    padding-left: 25px;
+@media (min-width: 991px) {
+  footer {
+    padding-bottom: 130px;
   }
-  .copyright--left {
-    display: block;
-    margin-bottom: 31px;
+  .contact--left {
+    padding-left: 50px;
   }
 }
