@@ -1925,9 +1925,10 @@ footer {
     top: auto;
     left: auto;
     display: block;
+    width: 100%;
     max-height: none;
     padding: 0;
-    padding-left: 30px;
+    padding-left: 8px;
     overflow: visible;
     border: none;
     -webkit-transition: none;
@@ -1941,7 +1942,7 @@ footer {
             backface-visibility: initial;
   }
   .page-nav__drop li {
-    min-width: auto;
+    min-width: 0;
     margin-right: 2.25em;
     margin-bottom: 1.4em;
     vertical-align: bottom;
