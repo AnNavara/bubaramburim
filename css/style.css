@@ -1641,6 +1641,35 @@ footer {
 .prices__item {
   position: relative;
 }
+.prices__item .prices__row:first-child::before {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  z-index: 2;
+  width: calc(100% - 30px);
+  height: 100%;
+  content: " ";
+  border-top: 2px solid #f5f5f5;
+}
+.prices__item .prices__row:last-child::before {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  z-index: 2;
+  width: calc(100% - 30px);
+  height: 100%;
+  content: " ";
+  border-bottom: 2px solid #f5f5f5;
+}
+.prices__item .prices__row:last-child:nth-child(even) .prices__cell:first-child::after {
+  position: absolute;
+  top: 15px;
+  left: 2px;
+  width: 100%;
+  height: calc(100% - 15px);
+  content: " ";
+  border-right: 2px solid #f5f5f5;
+}
 .prices__row .prices__cell:nth-child(2) {
   background-color: #fff;
 }
@@ -1656,6 +1685,24 @@ footer {
   padding-top: 4.4em;
   padding-bottom: 3.4em;
   background-color: #f5f5f5;
+}
+.prices__cell--underline::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 15px);
+  height: 100%;
+  content: " ";
+  border-bottom: 2px solid #f5f5f5;
+}
+.prices__cell--underline-left::after {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  width: calc(100% - 15px);
+  height: 100%;
+  content: " ";
+  border-bottom: 2px solid #f5f5f5;
 }
 .prices__cell h3 {
   margin: 0 0 0.78em 0;
