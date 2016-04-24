@@ -1724,6 +1724,12 @@ footer {
   background-color: #fff;
   background-repeat: no-repeat;
 }
+.about__text h1 {
+  display: block;
+  font-family: "PT Serif", "Times New Roman", Times, serif;
+  font-size: 23.04px;
+  line-height: 1.31;
+}
 .about__text span {
   display: block;
   font-family: "PT Serif", "Times New Roman", Times, serif;
@@ -2349,6 +2355,10 @@ footer {
     padding-bottom: 20px;
     background-image: url("../img/bg__cat.jpg");
     background-position: 320px 60px;
+  }
+  .about__text h1 {
+    display: inline;
+    font-size: 32px;
   }
   .about__text span {
     display: inline;
