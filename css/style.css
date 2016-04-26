@@ -228,35 +228,18 @@ th {
 
 html {
   font-size: 10px;
-  background-color: #fff; 
+  background-color: #fff;
 
   -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
   min-height: 100vh;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333;
-          flex-direction: column;
-  background-color: #ebebeb; 
-
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-}
-
-main {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-          flex-grow: 1;
+  background-color: #ebebeb;
 }
 
 input,
@@ -650,8 +633,7 @@ h2 {
   line-height: 1.42857;
   color: #333;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  word-wrap: break-word; 
+  letter-spacing: 0.08em; 
 
       -ms-hyphens: auto;
 }
@@ -672,7 +654,7 @@ h3 {
 h4 {
   margin: 0 0 1em 0;
   font-family: "PT Serif", "Times New Roman", Times, serif;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: normal;
   line-height: 1.42857;
   color: #333;
@@ -751,7 +733,7 @@ a:disabled {
   display: inline-block;
   padding: 0.7058em 1.9411em;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  font-size: 15.9984px;
+  font-size: 19.5536px;
   font-weight: 600;
   line-height: 1;
   color: #fff;
@@ -1033,7 +1015,7 @@ footer {
   margin: 0;
   margin-left: 3px;
   font-family: "PT Serif", "Times New Roman", Times, serif;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: normal;
   line-height: 1;
   color: #fff;
@@ -1047,14 +1029,15 @@ footer {
 }
 .content__descr {
   position: absolute;
-  bottom: 14px;
-  left: 28px;
+  bottom: 12px;
+  left: 25px;
   z-index: 3;
   width: 80%;
 }
 .content__descr > span {
   display: block;
   margin-bottom: 10px;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 1.42857;
   color: #bebebe;
@@ -1105,7 +1088,6 @@ footer {
   font-size: 33px;
   line-height: 1.1;
   text-align: left;
-  word-wrap: break-word;
 }
 
 .section {
@@ -2151,7 +2133,7 @@ footer {
   }
   .btn {
     padding: 12px 35px;
-    font-size: 18px;
+    font-size: 22px;
   }
   .btn--big {
     padding: 1.3em 3.6em 0.95em;
@@ -2229,7 +2211,6 @@ footer {
   .blog__heading {
     margin-bottom: 69px;
     font-size: 66px;
-    word-wrap: normal;
   }
   .section {
     padding-right: 0;
@@ -2430,7 +2411,23 @@ footer {
 
 @media (min-width: 66em) {
   body {
-    border: 20px solid #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: column;
+    border: 20px solid #fff; 
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+  }
+  main {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+            flex-grow: 1;
   }
   .container {
     width: 930px;
