@@ -670,7 +670,6 @@ h1 {
   font-size: 27px;
   font-weight: normal;
   line-height: 1;
-  color: #333;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -683,7 +682,6 @@ h2 {
   -webkit-hyphens: auto;
           hyphens: auto;
   line-height: 1.42857;
-  color: #333;
   text-transform: uppercase;
   letter-spacing: 0.08em; 
 
@@ -696,8 +694,7 @@ h3 {
   font-weight: normal;
   -webkit-hyphens: auto;
           hyphens: auto;
-  line-height: 1.42857;
-  color: #333; 
+  line-height: 1.42857; 
 
       -ms-hyphens: auto;
 }
@@ -707,25 +704,22 @@ h4 {
   font-size: 22px;
   font-weight: normal;
   line-height: 1.42857;
-  color: #333;
   letter-spacing: 0.08em;
 }
 
 h5 {
   margin: 0 0 1em 0;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: normal;
   line-height: 1.42857;
-  color: #333;
   letter-spacing: 0.08em;
 }
 
 h6 {
   margin: 0 0 1em 0;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
   line-height: 1.42857;
-  color: #333;
   letter-spacing: 0.08em;
 }
 
@@ -734,14 +728,12 @@ p {
   font-size: 14px;
   font-weight: normal;
   line-height: 1.65;
-  color: #333;
 }
 
 span {
   font-size: 14px;
   font-weight: normal;
   line-height: 1.65;
-  color: #333;
 }
 
 a {
@@ -769,23 +761,19 @@ a:disabled {
   opacity: 0.5;
 }
 
-.lighten {
-  color: #fff;
-}
-
-.text-center,
-.text-align {
+.text-center {
   text-align: center;
 }
 
 .btn {
   display: inline-block;
   padding: 0.7058em 1.9411em;
+  margin-bottom: 1.6em;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  font-size: 19.5536px;
+  font-size: 15.9984px;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
+  color: currentColor;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -793,15 +781,16 @@ a:disabled {
   -webkit-transition: border-color 0.2s linear;
           transition: border-color 0.2s linear;
 }
-.btn:hover {
-  color: #fff;
-  border-color: #fff;
+.btn:hover, .btn:focus {
+  color: currentColor;
+  border-color: currentColor;
 }
 .btn--big {
   padding: 1.1764em 1em;
   margin-top: 25px;
+  margin-bottom: 2em;
   font-size: 14.9991px;
-  color: #333;
+  color: currentColor;
   text-transform: uppercase;
   letter-spacing: 0.11em;
 }
@@ -813,9 +802,9 @@ a:disabled {
   color: #b0b0b0;
   text-transform: lowercase;
 }
-.btn--big:hover {
-  color: #333;
-  border-color: #333;
+.btn--big:hover, .btn--big:focus {
+  color: currentColor;
+  border-color: currentColor;
 }
 
 .page-header {
@@ -1141,6 +1130,7 @@ footer {
 .section {
   padding-bottom: 30px;
   margin-bottom: 20px;
+  color: #333;
   box-shadow: 0 29px 0 -27px #f1f1f1;
 }
 .section:before, .section:after {
@@ -1153,6 +1143,7 @@ footer {
 .section--dark {
   padding-top: 40px;
   padding-bottom: 60px;
+  color: #fff;
   text-align: center;
   background-color: #3c3c3c;
   box-shadow: none;
@@ -1268,7 +1259,6 @@ footer {
 }
 
 .list {
-  color: #fff;
   text-align: left;
 }
 .list--pad {
@@ -1289,7 +1279,7 @@ footer {
   font-family: "PT Serif", "Times New Roman", Times, serif;
   font-size: 17px;
   line-height: 1.65;
-  color: #fff;
+  color: currentColor;
 }
 .list li {
   position: relative;
@@ -1313,12 +1303,6 @@ footer {
 }
 .list ol li::before {
   display: none;
-}
-.list--light {
-  color: #333;
-}
-.list--light h1, .list--light h2, .list--light h3, .list--light h4, .list--light h5, .list--light h6, .list--light p {
-  color: #333;
 }
 
 .slider {
@@ -2181,7 +2165,7 @@ footer {
   }
   .btn {
     padding: 12px 35px;
-    font-size: 22px;
+    font-size: 18px;
   }
   .btn--big {
     padding: 1.3em 3.6em 0.95em;
@@ -2326,9 +2310,6 @@ footer {
   }
   .list ol {
     padding-bottom: 0;
-  }
-  .list--light h1, .list--light h2, .list--light h3, .list--light h4, .list--light h5, .list--light h6, .list--light p {
-    color: #333;
   }
   .slider {
     min-height: 574px;
