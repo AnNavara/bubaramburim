@@ -677,26 +677,18 @@ h1 {
 
 h2 {
   margin: 1.4em 0 0.6em 0;
-  font-size: 26.99998px;
+  font-size: 26.0px;
   font-weight: normal;
-  -webkit-hyphens: auto;
-          hyphens: auto;
   line-height: 1.42857;
   text-transform: uppercase;
-  letter-spacing: 0.08em; 
-
-      -ms-hyphens: auto;
+  letter-spacing: 0.08em;
 }
 
 h3 {
   margin: 1.3em 0 0.7em 0;
   font-size: 23.99998px;
   font-weight: normal;
-  -webkit-hyphens: auto;
-          hyphens: auto;
-  line-height: 1.42857; 
-
-      -ms-hyphens: auto;
+  line-height: 1.42857;
 }
 
 h4 {
@@ -763,6 +755,14 @@ a:disabled {
 
 .text-center {
   text-align: center;
+}
+
+.word-wrap {
+  -webkit-hyphens: auto;
+          hyphens: auto;
+  word-wrap: break-word; 
+
+      -ms-hyphens: auto;
 }
 
 .btn {
@@ -959,8 +959,8 @@ a:disabled {
 }
 
 footer {
-  padding-top: 10px;
-  padding-bottom: 25px;
+  padding-top: 30px;
+  padding-bottom: 15px;
 }
 
 .contact {
@@ -2160,6 +2160,9 @@ footer {
   span {
     font-size: 17px;
   }
+  .word-wrap {
+    word-wrap: normal;
+  }
   .btn {
     padding: 12px 35px;
     font-size: 18px;
@@ -2221,7 +2224,7 @@ footer {
     vertical-align: bottom;
   }
   footer {
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 50px;
   }
   .contact {
@@ -2230,7 +2233,7 @@ footer {
   }
   .blog {
     padding-top: 37px;
-    margin-bottom: 70px;
+    margin-bottom: 25px;
   }
   .blog__header {
     padding-right: 0;
@@ -2927,6 +2930,10 @@ footer {
   }
   .page-nav__drop li {
     margin-bottom: 0;
+  }
+  .blog {
+    padding-top: 37px;
+    margin-bottom: 70px;
   }
   .img--space {
     margin-top: 40px;
